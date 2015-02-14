@@ -21,7 +21,7 @@ app.use(bodyParser.json());
 app.use(bodyParser.json({ type: 'application/vnd.api+json' })); 
 app.use(methodOverride());
 
-// routes configuration
+// Configure routes
 require('./app/routes.js')(app, server);
 
 // Socket io (For push bullets)
